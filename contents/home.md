@@ -1,7 +1,7 @@
 
 
 [![PaoShou-China](https://img.shields.io/badge/PaoShou_China-github-blue?logo=github)](https://github.com/PaoShou-China)
-#### Donghe Chen, 陈东和 | MBTI: ESTJ | Hometown: Fujian Zhenghe
+#### Donghe Chen, 陈东和 | MBTI: ESTJ | Hometown: 中国 福建 政和
 He is currently pursuing a Ph.D Degree in Control Science and Engineering, at School of Astronautics, Beihang University, China.
 
 #### Email
