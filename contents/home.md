@@ -1,20 +1,13 @@
+## Donghe Chen, 陈东和
 
+Ph.D. student in Control Science and Engineering at the School of Astronautics, Beihang University.
 
-[![PaoShou-China](https://img.shields.io/badge/PaoShou_China-github-blue?logo=github)](https://github.com/PaoShou-China)
-#### Donghe Chen, 陈东和 | MBTI: ESTJ | Hometown: 中国 福建 政和
-He is currently pursuing a Ph.D Degree in Control Science and Engineering, at School of Astronautics, Beihang University, China.
+My research focuses on learning-based control for aerospace and robotic systems, including reinforcement learning, robust and safe control under dynamics uncertainty, real-time optimal control, and UAV autonomy.
 
-#### Email
-PaoShou@buaa.edu.cn
+**Email:** [PaoShou@buaa.edu.cn](mailto:PaoShou@buaa.edu.cn)
+**Profiles:** [Google Scholar](https://scholar.google.com/citations?user=P7DIy9sAAAAJ) · [IEEE](https://ieeexplore.ieee.org/author/37089693475) · [ORCID](https://orcid.org/0009-0004-3153-5101) · [GitHub](https://github.com/PaoShou-China)
 
-#### Acadymic Pages
-[[ORCID]](https://orcid.org/0009-0004-3153-5101)
-[[Google Scholar]](https://scholar.google.cz/citations?user=P7DIy9sAAAAJ&hl=zh-CN)
+### Education
 
-#### Education
-Ph.D.,  Control Science and Engineering, at School of Astronautics, Beihang University, 2023—present.\
-B.E., Aircarft Control and Information Engineering, at School of Astronautics, Beihang University, 2019—2023.
-
-#### Research Interests
-Deep Reinforcement Learning, Dynamic System Idendification, Optimal Control.
-
+- Ph.D. in Control Science and Engineering, School of Astronautics, Beihang University, 2023–present.
+- B.E. in Aircraft Control and Information Engineering, School of Astronautics, Beihang University, 2019–2023.

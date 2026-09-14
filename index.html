@@ -1,177 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="senli1073" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Donghe Chen — Ph.D. student at Beihang University working on reinforcement learning, robust and safe control, real-time optimal control, and UAV autonomy.">
+  <meta name="author" content="Donghe Chen">
+  <meta name="theme-color" content="#0b2a4a">
+  <title>Donghe Chen | Beihang University</title>
+  <link rel="icon" type="image/svg+xml" href="static/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
+  <link rel="stylesheet" href="static/css/main.css">
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-                </ul>
-            </div>
-        </div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Donghe Chen, home">DC<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+      </div>
     </nav>
+  </header>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
+  <main id="main">
+    <section class="hero" id="about">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Learning-based control · Aerospace autonomy</p>
+          <h1>Donghe Chen <span>陈东和</span></h1>
+          <p class="role">Ph.D. Student in Control Science and Engineering<br>School of Astronautics, Beihang University</p>
+          <p class="intro">
+            I develop learning-based control methods for aerospace and robotic systems, with a focus on
+            reinforcement learning, robustness and safety under dynamics uncertainty, real-time optimal control,
+            and UAV autonomy.
+          </p>
+          <div class="profile-links" aria-label="Academic profiles">
+            <a class="button primary" href="mailto:PaoShou@buaa.edu.cn">Email</a>
+            <a class="button" href="https://scholar.google.com/citations?user=P7DIy9sAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="button" href="https://ieeexplore.ieee.org/author/37089693475" target="_blank" rel="noopener">IEEE</a>
+            <a class="button" href="https://orcid.org/0009-0004-3153-5101" target="_blank" rel="noopener">ORCID</a>
+            <a class="button" href="https://github.com/PaoShou-China" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
+        <figure class="portrait-wrap">
+          <img src="static/assets/img/photo.png" alt="Portrait of Donghe Chen" width="461" height="667">
+        </figure>
+      </div>
     </section>
-    <!-- Top Section -->
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
+    <section class="research section">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="section-kicker">Research</p>
+          <h2>Reliable learning for physical systems</h2>
+          <p>Bridging data-driven decision making with control-theoretic structure for fast, robust, and deployable autonomy.</p>
         </div>
+        <div class="research-grid">
+          <article><span class="index">01</span><h3>Reinforcement Learning</h3><p>Learning efficient control policies for nonlinear, high-dimensional, and precision-critical systems.</p></article>
+          <article><span class="index">02</span><h3>Robust &amp; Safe Control</h3><p>Improving reliability under uncertain dynamics, disturbances, and rare failure-inducing conditions.</p></article>
+          <article><span class="index">03</span><h3>Real-Time Optimal Control</h3><p>Combining analytical structure and learning to deliver high-quality decisions within onboard compute limits.</p></article>
+          <article><span class="index">04</span><h3>UAV &amp; Aerospace Autonomy</h3><p>Developing deployable methods for quadrotors, spacecraft, guidance, and reusable launch vehicles.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="publications">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div><p class="section-kicker">Research output</p><h2>Publications</h2></div>
+          <p class="heading-note">Published and accepted work only. Donghe Chen is highlighted.</p>
+        </div>
+
+        <div class="year-group">
+          <h3 class="year">2026</h3>
+          <ol class="publication-list">
+            <li>
+              <div class="publication-meta"><span>IEEE TAES</span><a href="https://doi.org/10.1109/TAES.2026.3687197" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>Adviser–Actor–Critic: A Precision-Oriented Reinforcement Learning Framework for Space Robotics Control</h4>
+              <p><strong>Donghe Chen</strong>, Jiaxuan Yue, Yubin Peng, Lin Cheng, and Shengping Gong.</p>
+              <p class="venue"><em>IEEE Transactions on Aerospace and Electronic Systems</em>, 62: 10170–10186.</p>
+            </li>
+            <li>
+              <div class="publication-meta"><span>IEEE TAES</span><a href="https://doi.org/10.1109/TAES.2026.3687168" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>Robust Model-Based Reinforcement Learning for Rocket Landing</h4>
+              <p><strong>Donghe Chen</strong>, Di Wu, Lin Cheng, and Shengping Gong.</p>
+              <p class="venue"><em>IEEE Transactions on Aerospace and Electronic Systems</em>, 62: 10187–10204.</p>
+            </li>
+            <li>
+              <div class="publication-meta"><span>KBS</span><a href="https://doi.org/10.1016/j.knosys.2026.115299" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>Error Distribution Smoothing for Low-Dimensional Imbalanced Regression</h4>
+              <p><strong>Donghe Chen</strong>, Yubin Peng, Jiaxuan Yue, Lin Cheng, and Shengping Gong.</p>
+              <p class="venue"><em>Knowledge-Based Systems</em>, 336: 115299.</p>
+            </li>
+            <li>
+              <div class="publication-meta"><span>ASR</span><a href="https://doi.org/10.1016/j.asr.2026.02.032" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>Safe Reinforcement Learning for Aerospace Control via Model-Relaxed Lyapunov Stability</h4>
+              <p><strong>Donghe Chen</strong>, Jiaxuan Yue, Tengjie Zheng, Lin Cheng, and Shengping Gong.</p>
+              <p class="venue"><em>Advances in Space Research</em>, 77: 10691–10706.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="year-group">
+          <h3 class="year">2025</h3>
+          <ol class="publication-list">
+            <li>
+              <div class="publication-meta"><span>IROS</span><a href="https://doi.org/10.1109/IROS60139.2025.11246426" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>Design and Control of a 6-DOF Fully Actuated Aerial-Aquatic Robot with Thrust Vectoring</h4>
+              <p>Bocheng Tian, Yuchen Liu, Xiangyu Ren, <strong>Donghe Chen</strong>, Zonghao Zuo, and Li Wen.</p>
+              <p class="venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems</em>, 9099–9106.</p>
+            </li>
+            <li>
+              <div class="publication-meta"><span>IEEE Access</span><a href="https://doi.org/10.1109/ACCESS.2025.3634607" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>Impact-Angle-Constrained Guidance via Virtual Targets for Large Initial Heading Errors</h4>
+              <p>Muhua Qian and <strong>Donghe Chen</strong>.</p>
+              <p class="venue"><em>IEEE Access</em>, 13: 197985–197995.</p>
+            </li>
+            <li>
+              <div class="publication-meta"><span>IFAC</span><a href="https://doi.org/10.1016/j.ifacol.2025.11.246" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>Model Predictive Local Linear Controller with Adaptive Constraint Handling</h4>
+              <p>Yubin Peng, <strong>Donghe Chen</strong>, Shengping Gong, and Lin Cheng.</p>
+              <p class="venue"><em>IFAC-PapersOnLine</em>, 59: 775–780.</p>
+            </li>
+            <li>
+              <div class="publication-meta"><span>IFAC</span><a href="https://doi.org/10.1016/j.ifacol.2025.11.243" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>An Enhanced Adviser-Actor-Critic Framework for High-Precision Reinforcement Learning Control</h4>
+              <p>Jiaxuan Yue, <strong>Donghe Chen</strong>, Lin Cheng, and Shengping Gong.</p>
+              <p class="venue"><em>IFAC-PapersOnLine</em>, 59: 758–763.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="year-group">
+          <h3 class="year">2022</h3>
+          <ol class="publication-list">
+            <li>
+              <div class="publication-meta"><span>IEEE TOCS</span><a href="https://doi.org/10.1109/TOCS56154.2022.10016185" target="_blank" rel="noopener">DOI ↗</a></div>
+              <h4>A Fast Incomplete Data Classification Method Based on Representative Points and K-Nearest Neighbors</h4>
+              <p><strong>Donghe Chen</strong>, Ruolin Ma, and Haijun Du.</p>
+              <p class="venue"><em>IEEE Conference on Telecommunications, Optics and Computer Science</em>, 423–428.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading"><p class="section-kicker">Open source</p><h2>Selected projects</h2></div>
+        <div class="project-grid">
+          <a class="project-card" href="https://github.com/PaoShou-China/Adviser-Actor-Critic" target="_blank" rel="noopener">
+            <div class="project-top"><span>AAC</span><span aria-hidden="true">↗</span></div><h3>Adviser–Actor–Critic</h3><p>A precision-oriented reinforcement learning framework that couples a feedback-control adviser with a goal-conditioned actor.</p><small>Reinforcement learning · Precision control</small>
+          </a>
+          <a class="project-card" href="https://github.com/PaoShou-China/harmony-TDMPC2" target="_blank" rel="noopener">
+            <div class="project-top"><span>Harmony-TDMPC2</span><span aria-hidden="true">↗</span></div><h3>Robust Rocket Landing</h3><p>Model-based reinforcement learning for real-time rocket landing under multidimensional physical-parameter uncertainty.</p><small>Model-based RL · Aerospace control</small>
+          </a>
+          <a class="project-card" href="https://github.com/PaoShou-China/Error-Distribution-Smoothing" target="_blank" rel="noopener">
+            <div class="project-top"><span>EDS</span><span aria-hidden="true">↗</span></div><h3>Error Distribution Smoothing</h3><p>A representative data-selection method for low-dimensional regression with uneven complexity and sample density.</p><small>Imbalanced regression · Data selection</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="education">
+      <div class="container two-column">
+        <div>
+          <div class="section-heading"><p class="section-kicker">Background</p><h2>Education</h2></div>
+          <div class="timeline">
+            <article><time>2023 — Present</time><h3>Ph.D. in Control Science and Engineering</h3><p>School of Astronautics, Beihang University</p></article>
+            <article><time>2019 — 2023</time><h3>B.E. in Aircraft Control and Information Engineering</h3><p>School of Astronautics, Beihang University</p></article>
+          </div>
+        </div>
+        <div id="awards">
+          <div class="section-heading"><p class="section-kicker">Recognition</p><h2>Awards</h2></div>
+          <ul class="award-list">
+            <li><time>2023</time><span>Special Prize, 18th “Challenge Cup” National College Students’ Extracurricular Academic Science and Technology Contest</span></li>
+            <li><time>2021–2022</time><span>First Prize, Non-Mathematics Preliminary Competition, Chinese Mathematics Competitions for College Students</span></li>
+            <li><time>2020–2022</time><span>Merit Student, Beihang University</span></li>
+            <li><time>2022</time><span>Person of the Year Nominee, School of Aeronautic Science and Engineering</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>Donghe Chen</strong><p>Learning-based control for reliable aerospace autonomy.</p></div>
+      <div class="footer-links"><a href="mailto:PaoShou@buaa.edu.cn">PaoShou@buaa.edu.cn</a><a href="https://github.com/PaoShou-China" target="_blank" rel="noopener">GitHub</a><a href="#top">Back to top ↑</a></div>
     </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
+    <div class="container copyright">© <span id="year">2026</span> Donghe Chen. All rights reserved.</div>
+  </footer>
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
-        </div>
-    </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
-            </div>
-        </div>
-    </footer>
-
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      links.classList.remove('open');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>

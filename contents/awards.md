@@ -1,7 +1,4 @@
-- The 18th "Challenge Cup" National College Student Extracurricular Academic and Technological Works Competition Special Award, 2023.
-- First prize in non-mathematics preliminary Competition of National College Students Mathematics Competition， 2021， 2022.
-- Merit student of BUAA, 2020, 2021, 2022.
-- School of Aeronautic Science and Engineering Person of the Year nominated, 2022.
-
-
-
+- Special Prize, 18th “Challenge Cup” National College Students’ Extracurricular Academic Science and Technology Contest, 2023.
+- First Prize, Non-Mathematics Preliminary Competition, Chinese Mathematics Competitions for College Students, 2021 and 2022.
+- Merit Student, Beihang University, 2020–2022.
+- Person of the Year Nominee, School of Aeronautic Science and Engineering, 2022.
