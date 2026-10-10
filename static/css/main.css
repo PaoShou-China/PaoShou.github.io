@@ -97,6 +97,12 @@ h1 span { display: block; margin-top: 15px; color: rgba(255, 255, 255, .7); font
 .project-card p { margin: 0; color: var(--muted); font-size: .92rem; }
 .project-card small { margin-top: auto; padding-top: 28px; color: #687a8a; font-size: .75rem; font-weight: 700; }
 
+.interest-feature { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 30px; border: 1px solid var(--line); border-radius: 12px; background: white; }
+.interest-feature p { max-width: 650px; margin: 10px 0 0; color: var(--muted); }
+.interest-label { color: var(--blue); font-size: .76rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+.interest-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 12px; min-height: 44px; padding: 10px 15px; border-radius: 7px; background: var(--navy); color: white; text-decoration: none; font-size: .84rem; font-weight: 750; transition: transform .2s, background .2s; }
+.interest-link:hover { transform: translateY(-2px); background: var(--blue); }
+
 .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; }
 .timeline { border-left: 2px solid var(--line); padding-left: 27px; }
 .timeline article { position: relative; padding: 0 0 34px; }
@@ -151,6 +157,7 @@ footer { padding: 56px 0 26px; background: var(--navy); color: white; }
   .year { position: static; margin: 22px 0 0; }
   .publication-list li { padding: 22px 0 24px; }
   .publication-meta { align-items: center; }
+  .interest-feature { align-items: flex-start; flex-direction: column; gap: 22px; padding: 24px; }
   .two-column { grid-template-columns: 1fr; }
   .research-grid { grid-template-columns: 1fr; border-top: 0; }
   .research-grid article, .research-grid article + article { padding: 24px 0; border-right: 0; border-top: 1px solid var(--line); }
